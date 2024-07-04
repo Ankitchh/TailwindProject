@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resturent</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="font-serif bg-slate-700 text-white relative">
+    <!-- page1 -->
+    <div id="page1" class=" bg-[url('https://images.unsplash.com/photo-1603064752734-4c48eff53d05?q=80&w=1376&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-no-repeat bg-center md:bg-[url('https://images.unsplash.com/photo-1551782450-a2132b4ba21d?q=80&w=869&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] w-full h-screen  md:bg-cover  ">
+        <!-- nav start -->
+        <nav class="w-full h-25 md:p-5 bg-slate-800 flex md:flex-row justify-between md:gap-28 items-center px-5">
+            <div><h1 class="md:text-3xl text-xl hidden md:block">Feane</h1></div>
+            <div class="absolute top-3 w-full md:static">
+            <div class="md:hidden ">
+                <button id="hamburger" class="text-3xl ">&#9776;</button>
+            </div>
+            <div class="hidden md:flex flex-col md:flex-row md:items-center w-full md:w-auto " id="menu">
+                <ul class="flex flex-col md:flex-row md:text-xl gap-5 text-center w-full md:w-auto bg-slate-800 md:bg-transparent p-5 md:p-0">
+                    <li><a href="./index.html" class="block py-2 px-4 md:p-0 hover:bg-slate-600 md:hover:bg-transparent">Home</a></li>
+                    <li><a href="./menu.html" class="block py-2 px-4 md:p-0 hover:bg-slate-600 md:hover:bg-transparent">Menu</a></li>
+                    <li><a href="./about.html" class="block py-2 px-4 md:p-0 hover:bg-slate-600 md:hover:bg-transparent">About</a></li>
+                    <li><a href="./bookTable.html" class="block py-2 px-4 md:p-0 hover:bg-slate-600 md:hover:bg-transparent">Book Table</a></li>
+                    <li><a href="./contact.html" class="block py-2 px-4 md:p-0 hover:bg-slate-600 md:hover:bg-transparent">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        </nav>
+        <!-- nav end -->
+        <!-- main cotent -->
+        <div class="flex text-center mt-28 flex-col h-full md:justify-center md:items-center md:ml-10  xl:m-0 md:hidden">
+            <div><h1 class=" float-start ml-16 text-3xl pb-5">Feane</h1></div>
+            <h1 class=" text-4xl md:text-6xl mb-5"> Fast Food Resturent</h1>
+            <h3 class=" text-xl md:text-3xl">"Quick bites, lasting delights."</h3>
+        </div>
+    </div>
+    <!-- page 1 end -->
+
+    <!-- page2 start  -->
+     <div id="page2" class="w-full h-auto bg-slate-700 ">
+        <div class="w-full text-center my-5">
+            <h2 class="text-2xl md:text-3xl xl:text-5xl xl:py-12">Best Sellers Of Week</h2>
+        </div>
+        <div class="flex flex-wrap justify-evenly">
+        <div id="card" class="md:w-[45vw] xl:w-[30vw] m-5">
+            <div class="max-w-sm mx-auto bg-white rounded-lg overflow-hidden md:max-w-xl">
+                <div class="md:flex ">
+                <div ><img class="h-48 md:h-60 w-full md:w object-cover" src="https://images.unsplash.com/photo-1613985216255-a26ecf1df4a2?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""></div>
+                <div class="p-6 md:pt-4 uppercase md:w-1/2">
+                    <div class="tracking-wider font-bold text-sm text-black">Double Patty Chicken Burger.</div>
+                    <p class="text-xs mt-3 text-gray-700">A juicy chicken fillet with fresh lettuce, tomatoes, and creamy mayo in a toasted bun. Perfectly seasoned and deliciously satisfying!</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div id="card" class="md:w-[45vw] xl:w-[30vw] m-5">
+            <div class="max-w-sm mx-auto bg-white rounded-lg overflow-hidden md:max-w-xl">
+                <div class="md:flex ">
+                <div ><img class="h-48 md:h-60 w-full md:w object-cover" src="https://images.unsplash.com/photo-1672717973894-40efe25310db?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""></div>
+                <div class="p-6 md:pt-4 uppercase md:w-1/2">
+                    <div class="tracking-wider font-bold text-sm text-black">Paneer Cheese Pizza.</div>
+                    <p class="text-xs mt-3 text-gray-700">A fusion delight with marinated paneer, bell peppers, onions, and mozzarella on a crispy crust. A perfect blend of Indian and Italian flavors!</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div id="card" class="md:w-[45vw] xl:w-[29vw] m-5 ">
+            <div class="max-w-sm mx-auto bg-white rounded-lg overflow-hidden md:max-w-xl">
+                <div class="md:flex ">
+                <div ><img class="h-48 md:h-60 w-full md:w object-cover" src="https://images.unsplash.com/photo-1527661591475-527312dd65f5?q=80&w=1430&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""></div>
+                <div class="p-6 md:pt-4 uppercase md:w-1/2">
+                    <div class="tracking-wider font-bold text-sm text-black">Fresh Watermelon Mojito</div>
+                    <p class="text-xs mt-3 text-gray-700">A refreshing blend of juicy watermelon, fresh mint, lime, and a splash of soda. The perfect thirst-quencher for a hot day!</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="w-full text-center xl:mt-8" ><a href="./bookTable.html" class="  text-2xl md:text-4xl xl:text-5xl hover:text-slate-400">Book Table</a></div>
+    </div>
+     </div>
+     <!-- footer start -->
+    <footer class="bg-slate-800 p-5 md:p-10 flex w-full h-auto justify-between">
+        <div class="w-1/2">
+            <h1 class=" mb-6 text-xl md:text-3xl">"Quick bites, lasting delights."</h1>
+            <p class=" text-sm md:text-xl">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam, quia, reprehenderit quisquam exercitationem rerum mollitia assumenda aut quis quibusdam corrupti doloribus ipsam placeat quo! Facilis saepe recusandae dicta ratione quae.</p>
+        </div>
+        <div>
+            <div class="md:flex justify-center gap-10">
+            <ul class=" text-sm md:text-base flex flex-col gap-5 mr-16">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./menu.html">Menu</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./bookTable.html">Book Table</a></li>
+                <li><a href="./contact.html">Contact Us</a></li>
+            </ul>
+            <div class="mt-10 ">
+                <a href="#" class=" text-3xl"><i class="ri-instagram-line"></i></a>
+                <a href="#" class=" text-3xl"><i class="ri-facebook-box-line"></i></a>
+            </div>
+            </div>
+        </div>
+    </div>
+    </footer>
+    <script src="./index.js"></script>
+</body>
+
+</html>
