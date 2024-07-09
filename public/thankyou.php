@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Table</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="font-serif bg-slate-700 text-white relative">
+    <!-- page1 -->
+    <div id="page1" class=" bg-[url('https://images.unsplash.com/photo-1603064752734-4c48eff53d05?q=80&w=1376&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-no-repeat bg-center md:bg-[url('https://images.unsplash.com/photo-1551782450-a2132b4ba21d?q=80&w=869&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] w-full h-auto  md:bg-cover ">
+        <!-- nav start -->
+        <nav class="w-full h-25 md:p-5 bg-slate-800 flex md:flex-row justify-between md:gap-28 items-center px-5">
+            <div><h1 class="md:text-3xl text-xl hidden md:block">Feane</h1></div>
+            <div class="absolute top-3 w-full md:static">
+            <div class="md:hidden ">
+                <button id="hamburger" class="text-3xl ">&#9776;</button>
+            </div>
+            <div class="hidden md:flex flex-col md:flex-row md:items-center w-full md:w-auto " id="menu">
+                <ul class="flex flex-col md:flex-row md:text-xl gap-5 text-center w-full md:w-auto bg-slate-800 md:bg-transparent p-5 md:p-0">
+                    <li><a href="./index.html" class="block py-2 px-4 md:p-0 hover:bg-slate-600 md:hover:bg-transparent">Home</a></li>
+                    <li><a href="./menu.html" class="block py-2 px-4 md:p-0 hover:bg-slate-600 md:hover:bg-transparent">Menu</a></li>
+                    <li><a href="./about.html" class="block py-2 px-4 md:p-0 hover:bg-slate-600 md:hover:bg-transparent">About</a></li>
+                    <li><a href="./bookTable.html" class="block py-2 px-4 md:p-0 hover:bg-slate-600 md:hover:bg-transparent">Book Table</a></li>
+                    <li><a href="./contact.html" class="block py-2 px-4 md:p-0 hover:bg-slate-600 md:hover:bg-transparent">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        </nav>
+        <!-- nav end -->
+         
+
+    
+    </div>
+
+    <footer class="bg-slate-800 p-5 md:p-10 flex w-full h-auto justify-between">
+        <div class="w-1/2">
+            <h1 class="mb-6 text-xl md:text-3xl">"Quick bites, lasting delights."</h1>
+            <p class="text-sm md:text-xl">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam, quia, reprehenderit quisquam exercitationem rerum mollitia assumenda aut quis quibusdam corrupti doloribus ipsam placeat quo! Facilis saepe recusandae dicta ratione quae.</p>
+        </div>
+        <div>
+            <div class="md:flex justify-center gap-10">
+                <ul class="text-sm md:text-base flex flex-col gap-5 mr-16">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./menu.html">Menu</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./bookTable.html">Book Table</a></li>
+                    <li><a href="./contact.html">Contact Us</a></li>
+                </ul>
+                <div class="mt-10 flex gap-5">
+                    <a href="#" class="text-2xl"><i class="ri-instagram-line"></i></a>
+                    <a href="#" class="text-2xl"><i class="ri-facebook-box-line"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./index.js"></script>
+</body>
+</html>
