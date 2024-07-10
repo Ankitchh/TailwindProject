@@ -1,34 +1,25 @@
-document.getElementById('hamburger').addEventListener('click', function() {
-    var menu = document.getElementById('menu');
-    if (menu.classList.contains('hidden')) {
-        menu.classList.remove('hidden');
-        menu.classList.add('bg-slate-500');
+
+document.getElementById("booking").addEventListener("submit", function (event) {
+    event.preventDefault() // Prevent form submission
+
+    let names = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let phone = document.getElementById("phone").value;
+    let date = document.getElementById("date").value;
+    let time = document.getElementById("time").value;
+    let guests = document.getElementById("guests").value;
+
+    let isValid = true;
+
+    if (names === "") {
+        document.getElementById("nameError").innerHTML = "Name Cannot be Empty";
+        isValid = false;
     } else {
-        menu.classList.add('hidden');
+        document.getElementById("nameError").innerHTML = "";
     }
-});
 
-
-
-
-
-// validiting booking
-
-function selector(id,val){
-    element = getElementById(id);
-    element.getElementsByClassName("error")[0].innerHtml= val;
-}
-
-function validator (){
-    var working = flase;
-    var name = document.forms["booking"]["name"].value;
-    
-if (name.length == "" || name.length < 3){
-    selector("name","Lenght of name is too short");
-    
-}
-let num = name.length;
-    console.log(num);
-
-    return false;
-} 
+    if(isValid){
+        this.submit();
+    }
+    });
+    // Add more validation checks for email, phone, date

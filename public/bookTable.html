@@ -39,27 +39,27 @@
                 <form action="thankyou.php" id="booking" onsubmit="return validator()" method="post" class="flex flex-col gap-4">
                     <div>
                         <label for="name" class="block text-left mb-1">Name:</label>
-                        <input type="text" id="name" name="name" class="w-full p-2 rounded bg-slate-900 text-white" required> <b><span class="error text-red-500"></span></b>
+                        <input type="text" id="name" name="name" class="w-full p-2 rounded bg-slate-900 text-white" > <p id="nameError" class="text-red-600 text-left"></p>
                     </div>
                     <div>
                         <label for="email" class="block text-left mb-1">Email:</label>
-                        <input type="email" id="email" name="email" class="w-full p-2 rounded bg-slate-900 text-white" required>
+                        <input type="email" id="email" name="email" class="w-full p-2 rounded bg-slate-900 text-white" ><p id="emailError" class="text-red-600 text-left"></p>
                     </div>
                     <div>
                         <label for="phone" class="block text-left mb-1">Phone:</label>
-                        <input type="tel" id="phone" name="phone" class="w-full p-2 rounded bg-slate-900 text-white" required>
+                        <input type="tel" id="phone" name="phone" class="w-full p-2 rounded bg-slate-900 text-white" ><p id="phoneError" class="text-red-600 text-left"></p>
                     </div>
                     <div>
                         <label for="date" class="block text-left mb-1">Date:</label>
-                        <input type="date" id="date" name="date" class="w-full p-2 rounded bg-slate-900 text-white" required>
+                        <input type="date" id="date" name="date" class="w-full p-2 rounded bg-slate-900 text-white" ><p id="dateError" class="text-red-600 text-left"></p>
                     </div>
                     <div>
                         <label for="time" class="block text-left mb-1">Time:</label>
-                        <input type="time" id="time" name="time" class="w-full p-2 rounded bg-slate-900 text-white" required>
+                        <input type="time" id="time" name="time" class="w-full p-2 rounded bg-slate-900 text-white" ><p id="timeError" class="text-red-600 text-left"></p>
                     </div>
                     <div>
                         <label for="guests" class="block text-left mb-1">Number of Guests:</label>
-                        <input type="number" id="guests" name="guests" class="w-full p-2 rounded bg-slate-900 text-white" required>
+                        <input type="number" id="guests" name="guests" class="w-full p-2 rounded bg-slate-900 text-white" ><p id="guestError" class="text-red-600 text-left"></p>
                     </div>
                     <button type="submit" class="w-full py-2 mt-4 bg-blue-600 rounded hover:bg-blue-700">Book Table</button>
                 </form>
