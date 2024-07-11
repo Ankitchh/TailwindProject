@@ -35,15 +35,15 @@
         <div class="flex flex-col items-center justify-center h-full text-center text-white p-6 mt-10">
             <h2 class="text-4xl font-bold mb-4">Book a Table</h2>
             <p class="text-lg mb-6">Reserve your table now and enjoy a delightful dining experience at Feane Café.</p>
-            <div class="bg-slate-800 bg-opacity-75 p-6 rounded-lg max-w-md mx-auto">
-                <form action="thankyou.php" id="booking" onsubmit="return validator()" method="post" class="flex flex-col gap-4">
+            <div class="bg-slate-800 bg-opacity-75 p-6 rounded-lg w-72 md:w-96 mx-auto">
+                <form action="thankyou.php" id="booking" onsubmit="return validator()" method="post" class="flex flex-col gap-4 ">
                     <div>
                         <label for="name" class="block text-left mb-1">Name:</label>
-                        <input type="text" id="name" name="name" class="w-full p-2 rounded bg-slate-900 text-white" > <p id="nameError" class="text-red-600 text-left"></p>
+                        <input type="text" id="name" name="name" class="w-full p-2 rounded bg-slate-900 text-white" > <p id="nameError" class="text-red-600 text-left"> </p>
                     </div>
                     <div>
                         <label for="email" class="block text-left mb-1">Email:</label>
-                        <input type="email" id="email" name="email" class="w-full p-2 rounded bg-slate-900 text-white" ><p id="emailError" class="text-red-600 text-left"></p>
+                        <input type="text" id="email" name="email" class="w-full p-2 rounded bg-slate-900 text-white" ><p id="emailError" class="text-red-600 text-left"></p>
                     </div>
                     <div>
                         <label for="phone" class="block text-left mb-1">Phone:</label>
