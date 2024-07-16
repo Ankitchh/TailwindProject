@@ -7,10 +7,16 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./css/style.css">
+    <script>
+        // Detect if the page is reloaded and redirect to the home page
+        if (performance.navigation.type == 1) {
+            window.location.href = "./index.html";
+        }
+    </script>
 </head>
 <body class="font-serif bg-slate-700 text-white relative">
     <!-- page1 -->
-    <div id="page1" class=" bg-[url('https://images.unsplash.com/photo-1603064752734-4c48eff53d05?q=80&w=1376&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-no-repeat bg-center md:bg-[url('https://images.unsplash.com/photo-1551782450-a2132b4ba21d?q=80&w=869&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] w-full h-auto  md:bg-cover ">
+    <div id="page1" class=" bg-[url('https://images.unsplash.com/photo-1603064752734-4c48eff53d05?q=80&w=1376&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-no-repeat bg-center md:bg-[url('https://images.unsplash.com/photo-1551782450-a2132b4ba21d?q=80&w=869&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] w-full h-screen md:bg-cover ">
         <!-- nav start -->
         <nav class="w-full h-25 md:p-5 bg-slate-800 flex md:flex-row justify-between md:gap-28 items-center px-5">
             <div><h1 class="md:text-3xl text-xl hidden md:block">Feane</h1></div>
@@ -31,7 +37,7 @@
         </nav>
         <!-- nav end -->
          
-
+        <div class="flex items-center justify-center w-1/2 translate-x-1/2 translate-y-1/2 text:3xl md:text-4xl text-center opacity-[.8] h-auto p-10 bg-slate-600 "> <h1>Booking Done Sucessfully!!! <br> Thank you</h1></div>
     
     </div>
 
