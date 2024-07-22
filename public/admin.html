@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin_Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <link rel="stylesheet" href="./css/admin.css">
+</head>
+<body>
+    <div class="grid-container">
+        <div class="header">
+            <div class="menu-icon" onclick="openSidebar()">
+                <i class="ri-menu-line"></i>
+            </div>
+            <div class="header-left">
+                <i class="icon ri-search-line"></i>
+            </div>
+            <div class="header-right">
+                <i class="icon ri-notification-2-line"></i>
+                <i class="icon ri-mail-line"></i>
+                <i class="icon ri-account-circle-line"></i>
+            </div>
+        </div>
+        <div id="sidebar">
+            <div class="sidebar-title">
+                <div class="sidebar-brand">Feane</div>
+                <i class="icon ri-close-line" onclick="closeSidebar()"></i>
+            </div>
+            
+            <div >
+                <ul class="sidebar-list">
+                    <li class="list-item"><i class="ri-dashboard-horizontal-line"> Dashboard</i></li>
+                    <li class="list-item"><i class="ri-home-2-line"></i> Home</li>
+                    <li class="list-item"><i class="ri-restaurant-line"></i> Menu</li>
+                    <li class="list-item"><i class="ri-git-repository-line"></i> Inventory</li>
+                    <li class="list-item"><i class="ri-file-chart-line"></i> Repoarts</li>
+                    <li class="list-item"><i class="ri-contacts-book-2-line"></i> Contact</li>
+                    <li class="list-item"><i class="ri-settings-line"></i> Setting</li>
+                </ul>
+            </div>
+        </div>
+        <div class="main">
+            <div class="main-title">
+                <h2>DASHBOARD</h2>
+            </div>
+           
+            <div class="main-cards">
+                <div class="card">
+                    <div class="card-inner">
+                    <h3>PRODUCTS</h3>
+                    <i class="icon ri-book-open-line"></i>
+                </div>
+              
+                <h1>23</h1>
+            </div>
+            <div class="card">
+                 <div class="card-inner">
+                    <h3>CATEGORIES</h3>
+                    <i class="icon ri-shapes-line"></i>
+                </div>
+                <h1>5</h1>
+             </div>
+            <div class="card">
+                <div class="card-inner">
+                <h3>BOOKINGS</h3>
+                <i class="icon ri-group-line"></i>
+            </div>
+      
+            <h1>15</h1>
+             </div>
+            <div class="card">
+            <div class="card-inner">
+            <h3>ALERTS</h3>
+            <i class="icon ri-alarm-warning-line"></i>
+            </div>
+    
+        <h1>8</h1>
+        </div>
+        </div>
+        <div class="charts">
+           <div class="chart-card">
+            <h2 class="chart-title">Top 5 Best Sellers of the Week</h2>
+            <div id="bar-chart"></div>
+           </div>
+         
+
+         <div class="chart-card">
+            <h2 class="chart-title">Monthly Purchase and Sales</h2>
+            <div id="area-chart"></div>
+           </div>
+         </div>
+
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.51.0/apexcharts.min.js" integrity="sha512-rgvuw7+rpm6cEJOUFmmzb2UWUVWg2VkIbmw6vMoWjbX/7CsyPgiMvrXhzZJbS0Ow1Bq/3illaZaqQej1n3AA7Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/admin.js"></script>
+</body>
+</html>
