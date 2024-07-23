@@ -14,6 +14,7 @@ app.post('/submit-form', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'thankyou.html'));
 });
 
+
 function saveFormData(formData) {
     let data = [];
     try {

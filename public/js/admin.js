@@ -4,18 +4,22 @@
 
 var sidebarOpen = false;
 var sidebar = document.getElementById("sidebar");
-
+let elem = document.getElementById("icon-close");
 function openSidebar(){
    if(!sidebarOpen){
     sidebar.classList.add("sidebar-responsive");
        sidebarOpen = true;
+       elem.style.display = 'inline';
     }
+    
 }
 
 function closeSidebar(){
-    if(!sidebarOpen){
+    if(sidebarOpen){
+      
      sidebar.classList.remove("sidebar-responsive");
         sidebarOpen = false;
+        elem.style.display = 'none';
      }
  }
 
@@ -136,12 +140,13 @@ const barChartOptions = {
 const areaChartOptions = {
     series: [
       {
-        name: 'Purchase Orders',
-        data: [31, 40, 28, 51, 42, 109, 100],
-      },
-      {
         name: 'Sales Orders',
         data: [11, 32, 45, 32, 34, 52, 41],
+        
+      },
+      {
+        name: 'Purchase Orders',
+        data: [31, 40, 28, 51, 42, 109, 100],
       },
     ],
     chart: {
@@ -215,7 +220,7 @@ const areaChartOptions = {
     yaxis: [
       {
         title: {
-          text: 'Purchase Orders',
+          text: 'Sales Orders',
           style: {
             color: '#f5f7ff',
           },
@@ -229,7 +234,7 @@ const areaChartOptions = {
       {
         opposite: true,
         title: {
-          text: 'Sales Orders',
+          text: 'Purchase Orders',
           style: {
             color: '#f5f7ff',
           },
