@@ -33,21 +33,40 @@
             
             <div >
                 <ul class="sidebar-list">
-                    <li class="list-item"><i class="ri-dashboard-horizontal-line"> Dashboard</i></li>
-                    <li class="list-item"><i class="ri-home-2-line"></i> Home</li>
-                    <li class="list-item"><i class="ri-restaurant-line"></i> Menu</li>
-                    <li class="list-item"><i class="ri-git-repository-line"></i> Inventory</li>
-                    <li class="list-item"><i class="ri-file-chart-line"></i> Repoarts</li>
-                    <li class="list-item"><i class="ri-contacts-book-2-line"></i> Contact</li>
-                    <li class="list-item"><i class="ri-settings-line"></i> Setting</li>
+                    <a href="./admin.html"><li class="list-item"><i class="ri-dashboard-horizontal-line"> Dashboard</i></li></a>
+                    <a href="./index.html"><li class="list-item"><i class="ri-home-2-line"></i> Home</li></a>
+                    <a href="./menu.html"><li class="list-item"><i class="ri-restaurant-line"></i> Menu</li></a>
+                    <a href="#"> <li class="list-item"><i class="ri-git-repository-line"></i> Inventory</li></a>
+                    <a href="./#"><li class="list-item"><i class="ri-file-chart-line"></i> Repoarts</li></a>
+                    <a href="./contact.html"><li class="list-item"><i class="ri-contacts-book-2-line"></i> Contact</li></a>
+                    <a href="#"><li class="list-item"><i class="ri-settings-line"></i> Setting</li></a>
                 </ul>
             </div>
         </div>
         <div class="main">
             <div class="main-title">
                 <h2>DASHBOARD</h2>
+                <h3>Active Booking</h3>
             </div>
-           
+            <div id="table">
+            <table>
+                <thead>
+                    <tr>
+                        <!--table headers -->
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Contact No</th>
+                        <th>Date</th>
+                        <th>Time</th>
+                        <th>No of Guest</th>
+                        
+                    </tr>
+                </thead>
+                <tbody id="form-data-table-body">
+                    <!-- Rows will populated by JavaScript -->
+                </tbody>
+            </table>
+        </div>
             <div class="main-cards">
                 <div class="card">
                     <div class="card-inner">

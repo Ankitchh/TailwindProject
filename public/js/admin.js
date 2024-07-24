@@ -23,6 +23,31 @@ function closeSidebar(){
      }
  }
 
+
+// tablejs
+
+document.addEventListener('DOMContentLoaded', () => {
+  fetch('/form-data')
+      .then(response => response.json())
+      .then(data => populateTable(data))
+      .catch(error => console.error('Error fetching form data:', error));
+});
+
+function populateTable(data) {
+  const tableBody = document.getElementById('form-data-table-body');
+  data.forEach(item => {
+      const row = document.createElement('tr');
+      Object.values(item).forEach(value => {
+          const cell = document.createElement('td');
+          cell.textContent = value;
+          row.appendChild(cell);
+      });
+      tableBody.appendChild(row);
+  });
+}
+
+
+
 //  charts
 // barchart
 const barChartOptions = {

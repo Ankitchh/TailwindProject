@@ -15,6 +15,7 @@ app.post('/submit-form', (req, res) => {
 });
 
 
+
 function saveFormData(formData) {
     let data = [];
     try {
@@ -31,6 +32,17 @@ function saveFormData(formData) {
         console.error('Error writing JSON file:', err);
     }
 }
+
+app.get('/form-data', (req, res) => {
+    try {
+        const jsonData = fs.readFileSync(path.join(__dirname, 'public', 'form-data.json'), 'utf8');
+        res.json(JSON.parse(jsonData));
+    } catch (err) {
+        console.error('Error reading JSON file:', err);
+        res.status(500).send('Error reading form data');
+    }
+});
+
 
 app.listen(port, () => {
     console.log(`App is running on port ${port}`);
