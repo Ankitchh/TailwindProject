@@ -1,3 +1,14 @@
+//logout
+
+
+function logout() {
+  // Assuming you want to clear session data or perform logout related tasks
+  // For simplicity, let's clear localStorage which could simulate a session
+  localStorage.removeItem('loggedIn'); // Clear the loggedIn status
+  window.location.href = './login.html'; // Redirect to login page
+}
+
+
 // sidebar toggle
 
 
